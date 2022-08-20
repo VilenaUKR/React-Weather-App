@@ -6,8 +6,26 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <footer className="App-footer">
-        <p></p>
-        <a className="" href="/" target="_blank" rel="noreferrer"></a>
+        <p>
+          This project was coded by{" "}
+          <a
+            className="Portfolio-site-link"
+            href="https://vilena-martirosova.netlify.app/index.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Vilena Martirosova
+          </a>{" "}
+          and is{" "}
+          <a
+            className="GitHub-link"
+            href="https://github.com/VilenaUKR/React-Weather-App"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>
+        </p>
       </footer>
     </div>
   );
