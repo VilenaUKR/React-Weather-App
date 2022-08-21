@@ -1,0 +1,53 @@
+:root {
+  --primary-dark-color: #394a51;
+  --secondary-dark-color: #719589;
+  --primary-light-color: #fbf2d5;
+  --secondary-light-color: #fdc57b;
+}
+
+.WeatherInfo h1 {
+  line-height: 40px;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.WeatherInfo img {
+  font-size: 18px;
+  display: block;
+  float: right;
+}
+
+.WeatherInfo .temperature {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.WeatherInfo .units {
+  font-size: 18px;
+  top: -15px;
+  margin-left: 5px;
+}
+
+.WeatherInfo ul {
+  margin: 0;
+  padding: 0;
+}
+
+.WeatherInfo li {
+  font-size: 18px;
+  list-style: none;
+  line-height: 28px;
+}
+
+.WeatherInfo .main-img-description {
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.WeatherInfo .main-img-description {
+  text-align: center;
+}
+
+.WeatherInfo .col-6 {
+  margin-top: 20px;
+}
