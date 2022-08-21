@@ -1,10 +1,17 @@
+:root {
+  --primary-dark-color: #394a51;
+  --secondary-dark-color: #719589;
+  --primary-light-color: #fbf2d5;
+  --secondary-light-color: #fdc57b;
+}
+
 .App {
   max-width: 800px;
   padding: 30px;
   margin: 0 auto;
 }
 
-.App footer{
+.App footer {
   font-size: 12px;
   margin: 10px 0;
 }

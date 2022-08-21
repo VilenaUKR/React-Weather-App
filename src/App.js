@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather  defaultCity="Kyiv"/>
       <footer className="App-footer text-center">
         <p>
           This project was coded by{" "}
