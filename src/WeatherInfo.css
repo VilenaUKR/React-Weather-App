@@ -11,7 +11,7 @@
   margin-bottom: 10px;
 }
 
-.WeatherInfo img {
+.WeatherInfo canvas {
   font-size: 18px;
   display: block;
   float: right;
@@ -42,10 +42,8 @@
 .WeatherInfo .main-img-description {
   font-size: 18px;
   line-height: 10px;
-}
-
-.WeatherInfo .main-img-description {
   text-align: center;
+  margin-top: 20px;
 }
 
 .WeatherInfo .col-6 {

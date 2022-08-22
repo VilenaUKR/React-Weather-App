@@ -1,6 +1,7 @@
 import React from "react";
 import DayAndTime from "./DayAndTime";
 import MonthAndYear from "./MonthAndYear";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
@@ -19,11 +20,10 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <div className="row">
             <div className="col-6 m-auto">
-              <img
-                src={props.data.icon}
-                alt={props.data.description}
-                width={110}
-              ></img>
+              <WeatherIcon
+                icon={props.data.icon}
+                size={72}
+               />
             </div>
             <div className="col-6 m-auto">
               <span className="temperature">
