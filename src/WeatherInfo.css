@@ -28,6 +28,14 @@
   margin-left: 5px;
 }
 
+.WeatherInfo .unit a {
+  text-decoration: none;
+}
+
+.WeatherInfo .unit a:hover {
+  text-decoration: underline;
+}
+
 .WeatherInfo ul {
   margin: 0;
   padding: 0;
