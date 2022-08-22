@@ -22,9 +22,9 @@
   font-weight: bold;
 }
 
-.WeatherInfo .units {
+.WeatherInfo .unit {
   font-size: 18px;
-  top: -15px;
+  top: -20px;
   margin-left: 5px;
 }
 
