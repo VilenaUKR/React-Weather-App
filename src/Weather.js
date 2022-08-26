@@ -19,6 +19,9 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
+      sunrise: response.data.sys.sunrise,
+      sunset: response.data.sys.sunset,
+      timezoneOffset: response.data.timezone,
     });
   }
 

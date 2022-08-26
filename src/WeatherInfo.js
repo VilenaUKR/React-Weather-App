@@ -3,6 +3,8 @@ import DayAndTime from "./DayAndTime";
 import MonthAndYear from "./MonthAndYear";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import Sunrise from "./Sunrise";
+import Sunset from "./Sunset";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
@@ -35,8 +37,20 @@ export default function WeatherInfo(props) {
           <ul>
             <li>Humidity: {props.data.humidity} %</li>
             <li>Wind: {props.data.wind} km/h</li>
-            <li>Sunrise</li>
-            <li>Sunset</li>
+            <li>
+              Sunrise:{" "}
+              <Sunrise
+                sunrise={props.data.sunrise}
+                timezoneOffset={props.data.timezoneOffset}
+              />
+            </li>
+            <li>
+              Sunset:{" "}
+              <Sunset
+                sunset={props.data.sunset}
+                timezoneOffset={props.data.timezoneOffset}
+              />
+            </li>
           </ul>
         </div>
       </div>
