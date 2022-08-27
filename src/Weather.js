@@ -27,7 +27,8 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "47cf9a4f3105e2e2829ab9feb92923d1";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiUnits = "metric";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${apiUnits}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -57,14 +58,14 @@ export default function Weather(props) {
             <div className="col-2">
               <input
                 type="submit"
-                value="Search"
+                value="Go"
                 className="btn btn-secondary w-100"
               />
             </div>
             <div className="col-2">
               <input
                 type="submit"
-                value="Current"
+                value="📍"
                 className="btn btn-secondary w-100"
               />
             </div>

@@ -1,37 +1,47 @@
 :root {
-  --primary-dark-color: #394a51;
-  --secondary-dark-color: #719589;
-  --primary-light-color: #fbf2d5;
-  --secondary-light-color: #fdc57b;
+  --primary-dark-color: #418589;
+  --secondary-dark-color: #53a8b6;
+  --primary-light-color: #e6f3fb;
+  --secondary-light-color: #79c2d0;
+  --very-dark-color: #284d54;
 }
 
 .App {
-  max-width: 800px;
-  padding: 30px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  background-color: var(--primary-light-color);
+  color: var(--primary-dark-color);
+  border-radius: 5%;
+  border: 3px solid var(--primary-dark-color);
+  -webkit-box-shadow: 0px 0px 25px 19px #284d54, 25px 25px 11px 0px #418589;
+  -moz-box-shadow: 0px 0px 25px 19px #284d54, 25px 25px 11px 0px #418589;
+  box-shadow: 0px 0px 25px 12px #418589;
+  padding: 20px 20px 3px 20px;
+  margin-top: 3%;
+}
+
+[data-theme="dark"] {
+  background-color: var(--secondary-light-color);
+  color: var(--very-dark-color);
 }
 
 .App footer {
+  border-top: 2px solid var(--primary-dark-color);
+  line-height: 35px;
   font-size: 12px;
-  margin: 10px 0;
+  margin: 25px 0 0 0;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--very-dark-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .DarkModeToggle {
+  opacity: 0.6;
+  margin-top: 2px;
+  display: block;
 }

@@ -16,5 +16,5 @@
 }
 
 .WeatherForecast-temperature-min {
-  color: var(--secondary-dark-color);
+  opacity: 0.6;
 }

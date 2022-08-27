@@ -1,14 +1,10 @@
-:root {
-  --primary-dark-color: #394a51;
-  --secondary-dark-color: #719589;
-  --primary-light-color: #fbf2d5;
-  --secondary-light-color: #fdc57b;
-}
-
 .WeatherInfo h1 {
-  line-height: 40px;
-  font-size: 48px;
+  line-height: 50px;
+  font-size: 44px;
   margin-bottom: 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: var(--very-dark-color);
 }
 
 .WeatherInfo canvas {
@@ -28,14 +24,6 @@
   margin-left: 5px;
 }
 
-.WeatherInfo .unit a {
-  text-decoration: none;
-}
-
-.WeatherInfo .unit a:hover {
-  text-decoration: underline;
-}
-
 .WeatherInfo ul {
   margin: 0;
   padding: 0;
@@ -49,11 +37,16 @@
 
 .WeatherInfo .main-img-description {
   font-size: 18px;
-  line-height: 10px;
   text-align: center;
+  margin-top: 12px;
+}
+
+.WeatherInfo .col-6,
+.WeatherInfo .col-5,
+.WeatherInfo .col-1 {
   margin-top: 20px;
 }
 
-.WeatherInfo .col-6 {
-  margin-top: 20px;
+.WeatherInfo .descriptions-weather {
+  border-left: 2px solid var(--primary-dark-color);
 }

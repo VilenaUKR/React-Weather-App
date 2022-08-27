@@ -1,16 +1,4 @@
-:root {
-  --primary-dark-color: #394a51;
-  --secondary-dark-color: #719589;
-  --primary-light-color: #fbf2d5;
-  --secondary-light-color: #fdc57b;
-}
-
-
 .Weather {
-  border: 1px solid var(--secondary-dark-color);
-  border-radius: 10px;
-  color: var(--primary-dark-color);
-  font-family: Arial, sans-serif;
   padding: 15px;
 }
 
@@ -18,6 +6,20 @@
   margin-bottom: 20px;
 }
 
-.btn-secondary {
+.Weather .btn-secondary {
   background-color: var(--secondary-dark-color);
+  color: var(--primary-light-color);
+  border: 2px solid var(--primary-dark-color);
+  box-shadow: 2px 2px 4px 1px #418589, 1px 1px 5px 0px #ceecee inset;
+}
+
+.Weather input[type="search"] {
+  background-color: var(--secondary-dark-color);
+  border: var(--primary-dark-color);
+  border: 2px solid var(--primary-dark-color);
+  box-shadow: 2px 2px 4px 1px #418589, 1px 1px 5px 0px #ceecee inset;
+}
+
+.Weather input::placeholder {
+  color: var(--primary-light-color);
 }
