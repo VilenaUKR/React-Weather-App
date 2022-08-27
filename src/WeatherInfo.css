@@ -1,10 +1,11 @@
 .WeatherInfo h1 {
   line-height: 50px;
-  font-size: 44px;
+  font-size: 46px;
   margin-bottom: 10px;
   text-align: center;
   overflow-wrap: break-word;
   color: var(--very-dark-color);
+  font-family: Playfair Display;
 }
 
 .WeatherInfo canvas {
@@ -30,13 +31,13 @@
 }
 
 .WeatherInfo li {
-  font-size: 18px;
+  font-size: 20px;
   list-style: none;
   line-height: 28px;
 }
 
 .WeatherInfo .main-img-description {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   margin-top: 12px;
 }

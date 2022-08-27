@@ -40,7 +40,7 @@ function App() {
               <DarkModeToggle
                 onChange={toggleTheme}
                 checked={theme === "light"}
-                size={50}
+                size={55}
               />
             </div>{" "}
           </p>

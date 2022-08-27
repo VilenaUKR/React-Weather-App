@@ -5,10 +5,12 @@
 .WeatherForecast-day {
   margin-bottom: 10px;
   margin-top: 50px;
+  font-size: 18px;
 }
 
 .WeatherForecast-temperatures {
   margin-top: 8px;
+  font-size: 18px;
 }
 
 .WeatherForecast-temperature-max {
