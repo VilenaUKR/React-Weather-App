@@ -94,3 +94,32 @@
     padding: 0px;
   }
 }
+@media (width: 280px) {
+  .WeatherInfo h1 {
+    line-height: 30px;
+    font-size: 35px;
+  }
+
+  .WeatherInfo canvas {
+    font-size: 18px !important;
+    float: none;
+  }
+
+  .WeatherInfo .temperature {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .WeatherInfo .unit {
+    display: none;
+  }
+
+  .WeatherInfo li {
+    line-height: 22px;
+    font-size: small;
+  }
+
+  .WeatherInfo .main-img-description {
+    margin-top: 1px;
+  }
+}

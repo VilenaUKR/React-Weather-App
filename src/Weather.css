@@ -11,6 +11,7 @@
   border: 2px solid var(--primary-dark-color);
   box-shadow: 1px 1px 0px 0px #949595;
   text-align: center;
+  width: 60px;
 }
 
 .Weather input[type="search"] {
@@ -22,4 +23,28 @@
 
 .Weather input::placeholder {
   color: var(--primary-light-color);
+}
+
+@media (max-width: 415px) {
+  .Weather .btn-secondary {
+    width: auto;
+  }
+}
+
+.Weather form {
+  margin-bottom: 10px;
+}
+
+@media (width: 280px) {
+  .Weather {
+    padding: 5px;
+  }
+
+  .Weather .btn-secondary {
+    width: auto;
+  }
+
+  .Weather form {
+    margin-bottom: 10px;
+  }
 }
