@@ -20,3 +20,10 @@
 .WeatherForecast-temperature-min {
   opacity: 0.6;
 }
+
+@media (max-width: 415px) {
+  .WeatherForecast-day {
+    margin-bottom: 5px;
+    margin-top: 35px;
+  }
+}

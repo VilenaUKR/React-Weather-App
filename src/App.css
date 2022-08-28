@@ -25,7 +25,7 @@
 
 [data-theme="dark"] {
   background-color: var(--secondary-light-color);
-  color: var(--very-dark-color);
+  color: black;
   border: 3px solid var(--very-dark-color);
 }
 

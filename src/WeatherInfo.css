@@ -4,12 +4,10 @@
   margin-bottom: 10px;
   text-align: center;
   overflow-wrap: break-word;
-  color: var(--very-dark-color);
   font-family: Playfair Display;
 }
 
 .WeatherInfo canvas {
-  font-size: 18px;
   display: block;
   float: right;
 }
@@ -50,4 +48,49 @@
 
 .WeatherInfo .descriptions-weather {
   border-left: 2px solid var(--primary-dark-color);
+}
+
+@media (max-width: 415px) {
+  .WeatherInfo h1 {
+    line-height: 30px;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .WeatherInfo canvas {
+    font-size: 18px;
+    display: block;
+  }
+
+  .WeatherInfo .temperature {
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  .WeatherTemperature {
+    margin: 0;
+    padding: 0;
+  }
+
+  .WeatherInfo .unit {
+    font-size: 17px;
+    top: -15px;
+    margin-left: 1px;
+  }
+
+  .WeatherInfo li {
+    line-height: 26px;
+  }
+
+  .WeatherInfo .main-img-description {
+    margin-top: 3px;
+  }
+
+  .WeatherInfo .col-1 {
+    width: 1%;
+  }
+
+  .WeatherInfo .descriptions-weather {
+    padding: 0px;
+  }
 }

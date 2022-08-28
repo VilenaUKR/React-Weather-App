@@ -68,17 +68,13 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-2">
-              <input
-                type="submit"
-                value="Go"
-                className="btn btn-secondary w-100"
-              />
+              <input type="submit" value="Go" className="btn btn-secondary" />
             </div>
-            <div className="col-2">
+            <div className="col-2 ">
               <input
                 type="submit"
-                value="📍"
-                className="btn btn-secondary w-100"
+                value="🏠"
+                className="btn btn-secondary"
                 onClick={showLocation}
               />
             </div>
