@@ -1,7 +1,7 @@
 :root {
   --primary-dark-color: #418589;
   --secondary-dark-color: #53a8b6;
-  --primary-light-color: #e6f3fb;
+  --primary-light-color: #fafdff;
   --secondary-light-color: #69a7b4;
   --very-dark-color: #284d54;
 }
@@ -26,6 +26,7 @@
 [data-theme="dark"] {
   background-color: var(--secondary-light-color);
   color: var(--very-dark-color);
+  border: 3px solid var(--very-dark-color);
 }
 
 .App footer {

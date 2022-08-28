@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App" data-theme={theme}>
       <div className="container">
-        <Weather defaultCity="Kyiv" />
+        <Weather defaultCity="q=Kyiv" />
         <footer className="App-footer text-center">
           <p>
             This project was coded by{" "}

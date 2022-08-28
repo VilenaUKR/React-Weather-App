@@ -10,7 +10,7 @@ export default function Weather(props) {
 
   function handleResponse(response) {
     setWeatherData({
-      coordinates: response.data.coord,
+      coords: response.data.coord,
       ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -25,20 +25,32 @@ export default function Weather(props) {
     });
   }
 
-  function search() {
-    const apiKey = "47cf9a4f3105e2e2829ab9feb92923d1";
-    const apiUnits = "metric";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${apiUnits}`;
-    axios.get(apiUrl).then(handleResponse);
+  function showLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
+
+  function searchLocation(position) {
+    const currentCoords = `lat=${position.coords.latitude}&lon=${position.coords.longitude}`;
+    search(currentCoords);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    const searchedCity = `q=${city}`;
+    search(searchedCity);
+    event.target.reset();
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function search(location) {
+    const apiKey = "47cf9a4f3105e2e2829ab9feb92923d1";
+    const apiUnits = "metric";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?${location}&appid=${apiKey}&units=${apiUnits}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
@@ -67,16 +79,17 @@ export default function Weather(props) {
                 type="submit"
                 value="📍"
                 className="btn btn-secondary w-100"
+                onClick={showLocation}
               />
             </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
+        <WeatherForecast coords={weatherData.coords} />
       </div>
     );
   } else {
-    search();
+    search(city);
     return "Loading...";
   }
 }
